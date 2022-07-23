@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel ="icon" href="favicon.ico">
+    <style>
+      .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      }
+    </style>
+</head>
+<body>
+
+  
+
+    <div class = "header" id = "header">
+
+      <ul id = "navbar">
+        <li><a class="active" href="#header">Home</a></li>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact-me">Contact Me</a></li>
+      </ul>
+
+        <img class = "top-cloud" src = "cloud.png" alt="Cloud-image">
+        <h1><em>Im Preet</em></h1>
+        
+        <div class = "wavy"> 
+            <span style="--i:1">A</span> 
+            <span style="--i:2">P</span>
+            <span style="--i:3">r</span>
+            <span style="--i:4">o</span>
+            <span style="--i:5">g</span>
+            <span style="--i:6">r</span>
+            <span style="--i:7">a</span>
+            <span style="--i:8">m</span>
+            <span style="--i:9">m</span>
+            <span style="--i:10">e</span>
+            <span style="--i:11">r</span>
+        </div>
+        <img class = "bottom-cloud" src = "cloud.png" alt="Cloud-image">
+        <img src = "mountain.png" alt="Mountain-image">
+
+    </div>
+
+    <div class="middle-container">
+        <div class="profile" id = "profile">
+          <img  class = "circle" src="https://media-exp1.licdn.com/dms/image/C4E03AQF8-PY0G7ThhQ/profile-displayphoto-shrink_400_400/0/1628718990294?e=1663804800&v=beta&t=cbxiIHbjQnOsF04ZyLOg1xr2OdR_67SKVyKrt37HcIY" alt="my-image">
+          <h2>Hello.</h2>
+          <p> I Am Currently Enrolled At The University Of Illinois At Chicago<br>
+              My Interests Are Front And Backend Development</p>
+        </div>
+        <hr>
+        <div class="skills" id = "skills">
+          <h2>My Skills.</h2>
+          <div class="skill-row">
+            <img class="code-image circle" src="JavaScript-code.jpg" alt="code-image">
+            <h3>Coding</h3>
+            <p>Back in 2020, I started coding because it was a recommend class, and ever since I have fallen in love with it, and have continued to improve my front and backend skills, as well as sharpening my software engineering skills</p>
+          </div>
+          <div class="skill-row">
+            <img class="cricket-image circle" src="img-cricket.jpg" alt="cricket-image">
+            <h3>Playing Cricket</h3>
+            <p>Die Hard Fan Of The Sport!</p>
+          </div>
+        </div> <br><br>
+
+        <hr>
+
+        <div class="contact-me" id = "contact-me">
+          <h2>Get In Touch</h2>
+          <h3> If you Love Cricket Or Coding</h3>
+          <p>Lets Talk About How Awesome These thing Are.<br><br>Lets Code and Play Cricket!</p>
+          <a class="btn" href="mailto:ADD YOUR EMAIL">CONTACT ME</a>
+        </div>
+      </div>
+      <div class="bottom-container">
+        <a class="footer-link" href="https://www.linkedin.com/in/preet-talati/" target = "_blank" >LinkedIn</a>
+        <a class="footer-link" href="" target = "_blank">Website</a>
+        <p>© 2022 Preet Talati.</p>
+      </div>
+      
+    <script>
+      window.onscroll = function() {myFunction()};
+
+      var navbar = document.querySelector("#navbar");
+      var sticky = navbar.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+    </script>
+</body>
+</html>
